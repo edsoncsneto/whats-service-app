@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #e0d5c8;
+    padding: 0;
+    margin: 0;
+}
+
+header div {
+    display: inline;
+}
+.robotMini{
+    width: 52px;
+    height: 51px;
+}
+
+header button {
+    border-radius: 50px;
+    padding: 10px;
+    width: 138px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+}
+
+header .cadastre-se {
+    color: #ECE5DD;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 1240px;
+    background-color: #128C7E;
+}
+
+header .login {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #25D366;
+}
+
+
+.container h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 200;
+    margin-top: 250px;
+    
+}
+
+.container {
+    padding-top: 100px;
+    width: 866px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+#planos {
+    display: flex;
+    gap: 20px;
+}
+
+.planos {
+    width: 373px;
+    height: 534px;
+    border-radius: 20px;
+    background-color: rgba(37, 211, 102, 0.3);
+    margin: 110 10px; 
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.nomePlano {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+}
+.nomePlano2 {
+    text-align: center;
+    font-size: 36px;
+    color: #128C7E;
+    font-weight: 600;
+}
+
+.porApenas {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.valor {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-top: -15px;
+}
+.valor2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #25D366;
+    margin-top: -15px;
+}
+
+.texto {
+    padding-top: 80px;
+}
+
+.botao {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.botao button {
+    width: 281px;
+    height: 67px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    color: #25D366;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+div .chatbot {
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    header button {
+        width: 80px;
+        height: 30px;
+    }
+
+    .robotMini {
+        display: none;
+    }
+
+    header .login {
+        display: none;
+    }
+
+    header .cadastre-se {
+        font-size: 10px;
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+
+    
+    h1 {
+        display: none;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+    }
+
+    .planos {
+        width: 300px;
+        height: 500px;
+        margin-bottom: 40px;
+        margin-left: 25px;
+    }
+
+    .botao {
+        margin-top: -50px ;
+    }
+
+    .planos2 {
+        width: 300px;
+        height: 500px;
+        margin-bottom: 70px;
+        margin-left: 25px;
+    }
+
+    .chatbot {
+        display: none;
+    }
+
+}

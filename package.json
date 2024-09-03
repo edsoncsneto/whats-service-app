@@ -1,0 +1,30 @@
+{
+  "name": "whats-service-app",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "db:table": "node database/table.js",
+    "db:seed": "node database/seed.js"
+  },
+  "keywords": [
+    "chatbot",
+    "automação"
+  ],
+  "author": "Edson Neto e Cláudio Renato",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

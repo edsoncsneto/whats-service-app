@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(236, 229, 221, 1);
+}
+
+header {
+    background-color: rgba(7, 94, 84, 1);
+    color: rgba(236, 229, 221, 1);
+    padding: 10px 20px;
+}
+
+/* Primeira parte da Home Page*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo-1 img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-1 h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.navbar ul li a {
+    color: rgba(236, 229, 221, 1);
+    text-decoration: none;
+}
+
+.navbar .button {
+    position: fixed;
+    top: 19px;
+    right: 50px;
+    background-color: rgba(37, 211, 102, 1);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: rgba(236, 229, 221, 1);
+    border: 1px solid #000000;
+}
+
+.navbar .button:hover {
+    background-color:  #075E54;
+    border: 2px solid #000000;
+}
+
+main {
+    padding: 110px 90px;
+}
+
+.main-section {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(7, 94, 84, 1);
+}
+
+.logo-2 {
+    flex: 1;
+}
+
+.logo-2 img {
+    max-width: 300px;
+}
+
+.content-main h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.content-main h2 {
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+
+/* Estilizando a seção de aplicações do chat*/
+.applications-section {
+    background: linear-gradient(to bottom, #075E54, #128C7E);
+    padding: 80px 40px;
+    color: rgba(236, 229, 221, 1);
+}
+
+.applications-section .content-applications {
+    display: flex;
+    align-items: center;
+}
+
+.applications-section .prints img {
+    max-width: 100%;
+    margin-right: 60px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+}
+
+.applications-section .text {
+    flex: 1;
+}
+
+.content-applications h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.content-applications h2 {
+    font-size: 16px;
+}
+
+/* Estilizando a seção de entre em contato*/
+
+.contact-section {
+    padding: 80px 40px;
+}
+
+.content-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-contact h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.left-content {
+    margin-left: 100px;
+    flex:1;
+    color: rgba(7, 94, 84, 1);
+}
+
+.left-content li{
+    margin-bottom: 5px;
+}
+
+.right-content {
+    flex:1;
+    color: rgba(236, 229, 221, 1);
+}
+
+.right-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.right-content form input {
+    padding: 8px;
+    border: 1px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    height: 15px;
+    background-color: rgba(217, 217, 217, 0.3);
+}
+
+.form-content {
+    padding: 40px 80px;
+    background-color: #075E54;
+    border-radius: 30px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+}
+
+.form-content button {
+    background-color: rgba(37, 211, 102, 1);
+    padding: 8px 15px;
+    border-radius: 18px;
+    color: rgba(236, 229, 221, 1);
+    width: 80px;
+    align-self: flex-end;
+    border-style: none;
+    cursor: pointer;
+}
+
+.form-content form button:hover {
+    background-color: #075E54;
+    color:black;
+    border: 2px solid #000000;
+}
+
+.form-content p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(7, 94, 84, 1);
+    color: rgba(236, 229, 221, 1);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: rgba(236, 229, 221, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        display: none;
+    }
+
+    body {
+        width: 100%;
+    } 
+
+    main {
+        padding: 10px;
+    }
+    .main-section {
+        padding: 0;
+        margin: 0;
+    }
+    .logo-2 img {
+        display: none;
+    }
+
+    .content-main {
+        margin: 0;
+        padding: 0;
+    }
+    .text h1 {
+        margin-left: 15px;
+    }
+    .text h2 {
+        margin-left: 15px;
+    }
+
+    h1 {
+        font-size: 5px;
+    }
+
+    .content-main h2 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .left-content {
+        display: none;
+    }
+
+    .right-content .form-content{
+        padding: 30px;
+    }
+    .form-content p {
+        font-size: 2;
+        text-align: center;
+    }
+}

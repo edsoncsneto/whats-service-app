@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administrador | Whats Service</title>
+    <link rel="stylesheet" href="painel.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>PAINEL ADMINISTRADOR</h2>
+            <hr>
+            <ul>
+                <li><a href="planosAdmin.html">Planos</a></li>
+                <hr>
+                <li><a href="usuariosAdmin.html">Usuários</a></li>
+                <hr>
+                <li><a href="contratosAdmin.html">Contratos</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <section id="planos">
+                <h2>Planos</h2>
+                <button id="new-plan-btn" class="new-btn">Novo</button>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <!-- tela de cadastro/edição -->
+    <div id="new-plan-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Cadastrar Novo Plano</h2>
+            <form id="new-plan-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required><br><br>
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" step="0.01" required><br><br>
+                <input type="hidden" id="plano-id">
+                <button type="submit" id="submit-btn">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="planosAdmin.js"></script>
+
+</body>
+</html>
