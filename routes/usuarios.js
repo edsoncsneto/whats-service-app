@@ -7,12 +7,15 @@ routerUsuarios.post('/api/usuarios/login', async (req, res) => {
     const { email, senha } = req.body;
 
     try {
-        //verificando se tem o email
         const usuario = await getUsuarioByEmail(email);
         if (usuario) {
             const senhaVerificar = await getLogin(email);
             if (senhaVerificar.senha === senha) {
-                return res.status(200).json({ message: 'Login bem-sucedido!' });
+                if (email === 'edson@gmail.com' && senha === '12345') {
+                    return res.status(200).json({ redirectUrl: '/public/admin/contratosAdmin.html' });
+                } else {
+                    return res.status(200).json({ message: 'Login bem-sucedido!' });
+                }
             } else {
                 return res.status(401).json({ message: 'Senha incorreta.' });
             }

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Whats Service</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Verifique o caminho do CSS -->
 </head>
 <body>
     <header>
         <a href="../homepage/index.html">
-                 <div class="imgRobot">
-                    <img class="robotMini" src="chatbot 2.png" alt="">
-                </div>
+            <div class="imgRobot">
+                <img class="robotMini" src="chatbot 2.png" alt="Chatbot">
+            </div>
         </a>
         <nav>
             <a href="../cadastro/index.html">
@@ -21,7 +21,6 @@
                 <button class="planos">PLANOS</button>
             </a>  
         </nav>
-        
     </header>
 
     <div class="container">
@@ -29,19 +28,23 @@
             <h1>BEM-VINDO!</h1>
             <div>
                 <a href="../homepage/index.html">
-                                  <img src="Group 5.png" alt="">
+                    <img src="Group 5.png" alt="Group Image">
                 </a>
             </div>
             <p class="loginName">Login:</p>
-            <div class="inputContainer">
-                <input type="email" placeholder="email">
-                <input type="password" placeholder="senha"> 
-            </div>
-            <a href="#">Esqueci a senha!</a>
+            <form id="loginForm">
+                <div class="inputContainer">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                </div>
+                <button id="login-button" type="submit">Login</button>
+            </form>            
+            <a href="#">Esqueci a senha!</a> 
         </div>
     </div>
     <div class="logoLado">
-        <img class="logo" src="chatbot 2.png" alt="">
+        <img class="logo" src="chatbot 2.png" alt="Logo">
     </div>
-</body>
+    <script src="./login.js" type="module"></script> 
+</body> 
 </html>
